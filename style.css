@@ -1,432 +1,443 @@
 @font-face {
-    font-family: 'Stratos';
-    src: url('https://cdn-user53347.skyeng.ru/assets/fonts/stratos/stratosskyengweb-medium.woff2') format('woff2');
-    font-weight: 500; /* Medium */
-    font-style: normal;
+  font-family: "Stratos";
+  src: url("https://cdn-user53347.skyeng.ru/assets/fonts/stratos/stratosskyengweb-medium.woff2")
+    format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Stratos';
-    src: url('https://cdn-user53347.skyeng.ru/assets/fonts/stratos/stratosskyengweb-regular.woff2') format('woff2');
-    font-weight: 400; /* Regular */
-    font-style: normal;
+  font-family: "Stratos";
+  src: url("https://cdn-user53347.skyeng.ru/assets/fonts/stratos/stratosskyengweb-regular.woff2")
+    format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    text-align: center;
-    font-family: 'Stratos', sans-serif;
+  margin: 0;
+  text-align: center;
+  font-family: "Stratos", sans-serif;
 }
 
 .body-wrapper {
-    max-width: 1428px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 1428px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header{
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 52px;
-    max-width: 999px;
+.header {
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 52px;
+  max-width: 999px;
 }
 
 .button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Stratos', sans-serif;
-    font-size: 16px;
-    text-decoration: none; /* Убираем подчеркивание */
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Stratos", sans-serif;
+  font-size: 16px;
+  text-decoration: none; /* Убираем подчеркивание */
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
 }
 
 .orange {
-    color: #78634D; /* Цвет текста */
+  color: #78634d; /* Цвет текста */
 }
 
 .purple {
-    color: #795F83; /* Цвет текста */
+  color: #795f83; /* Цвет текста */
 }
 
 .grey {
-    color: #6E767A; /* Цвет текста */
+  color: #6e767a; /* Цвет текста */
 }
 
 .button .arrow {
-    margin-left: 10px;
-    font-size: 20px;
-    color: white; /* Цвет стрелки */
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+  margin-left: 10px;
+  font-size: 20px;
+  color: white; /* Цвет стрелки */
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
 
 .button.orange .arrow {
-    background-color: #FF923D;
+  background-color: #ff923d;
 }
 
 .button.purple .arrow {
-    background-color: #DC85FF;
+  background-color: #dc85ff;
 }
 
 .button.grey .arrow {
-    background-color: #CDCDCD;
+  background-color: #cdcdcd;
 }
 
 .arrow {
-    margin-left: 5px; /* Отступ для стрелки */
+  margin-left: 5px; /* Отступ для стрелки */
 }
 
 .header p {
-    margin: 0;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center;
+  margin: 0;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
 }
 
 .card {
-    max-width: 300px;
-    width: 100%;
-    padding: 56px 28px 56px 28px;
-    border-radius: 60px;
+  max-width: 300px;
+  width: 100%;
+  padding: 56px 28px 56px 28px;
+  border-radius: 60px;
 }
 
 .image.herb-orange {
-    background-color: #FFF4EB;
-    border-radius: 16.84px;
-    padding: 11.8px 14.73px 14.46px 14.73px;
-    max-width: 80px;
-    max-height: 80px;
+  background-color: #fff4eb;
+  border-radius: 16.84px;
+  padding: 11.8px 14.73px 14.46px 14.73px;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .image.fgos {
-    background-color: #FFFFFF;
-    border-radius: 23.64px;
-    padding: 12.9px 21.49px 12.9px 21.49px;
-    max-width: 140px;
-    max-height: 48px;
+  background-color: #ffffff;
+  border-radius: 23.64px;
+  padding: 12.9px 21.49px 12.9px 21.49px;
+  max-width: 140px;
+  max-height: 48px;
 }
 
 .image.herb-purple {
-    background-color: #FCF5FF;
-    border-radius: 16.84px;
-    padding: 11.8px 14.73px 14.46px 14.73px;
-    max-width: 80px;
-    max-height: 80px;
+  background-color: #fcf5ff;
+  border-radius: 16.84px;
+  padding: 11.8px 14.73px 14.46px 14.73px;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .image.vshe {
-    background-color: #FFFFFF;
-    border-radius: 30.09px;
-    padding: 13.9px 22px 13.9px 22px;
-    max-width: 104px;
-    max-height: 48px;
+  background-color: #ffffff;
+  border-radius: 30.09px;
+  padding: 13.9px 22px 13.9px 22px;
+  max-width: 104px;
+  max-height: 48px;
 }
 
 .card .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
 }
 
-.card p{
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: -0.05px;
-    text-align: center;
-    margin: 0px;
+.card p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.05px;
+  text-align: center;
+  margin: 0px;
 }
 
 .orange.card {
-    background: linear-gradient(#FFF2E0, #FFE4C2);
-    margin-top: 40px;
+  background: linear-gradient(#fff2e0, #ffe4c2);
+  margin-top: 40px;
 }
 
 .fgos.card {
-    clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
-    background-color: #F4F4F4;
-    padding-top: 80px;
-    margin-bottom: 34px;
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+  background-color: #f4f4f4;
+  padding-top: 80px;
+  margin-bottom: 34px;
 }
 
 .purple.card {
-    background: linear-gradient(#F9EBFF, #F4D6FF);
-    margin-top: 40px;
+  background: linear-gradient(#f9ebff, #f4d6ff);
+  margin-top: 40px;
 }
 
 .vshe.card {
-    background-color: #F4F4F4;
-    padding-top: 54px;
-    margin-bottom: 43px;
+  background-color: #f4f4f4;
+  padding-top: 54px;
+  margin-bottom: 43px;
 
-    background:
-    radial-gradient(circle at 0 100%, rgba(0,0,0,0) 48px, #F4F4F4 10px),
-    radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 48px, #F4F4F4 10px),
-    radial-gradient(circle at 100% 0, rgba(0,0,0,0) 48px, #F4F4F4 10px),
-    radial-gradient(circle at 0 0, rgba(0,0,0,0) 48px, #F4F4F4 10px);
+  background: radial-gradient(
+      circle at 0 100%,
+      rgba(0, 0, 0, 0) 48px,
+      #f4f4f4 10px
+    ),
+    radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0) 48px, #f4f4f4 10px),
+    radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 48px, #f4f4f4 10px),
+    radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 48px, #f4f4f4 10px);
+  background-position: bottom left, bottom right, top right, top left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media screen and (max-width: 1366px) {
+  .body-wrapper {
+    max-width: 1233px;
+    max-height: 604px;
+  }
+
+  .cards {
+    gap: 36px;
+  }
+
+  .card {
+    padding: 52px 28px 52px 28px;
+  }
+
+  .card .info {
+  }
+
+  .card p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.15px;
+  }
+
+  .orange.card .info {
+    margin-top: 28px;
+  }
+
+  .image.herb-orange {
+    max-width: 76px;
+    max-height: 76px;
+  }
+
+  .fgos.card {
+    margin-bottom: 32px;
+  }
+
+  .purple.card .info {
+    margin-top: 28px;
+  }
+
+  .image.herb-purple {
+    max-width: 76px;
+    max-height: 76px;
+  }
+
+  .vshe.card {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body-wrapper {
+    max-width: 940px;
+    max-height: 776px;
+  }
+
+  .header {
+    max-width: 780px;
+  }
+
+  .header p {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .cards {
+    max-width: 780px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px; /* Расстояние между карточками */
+    justify-items: center;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 380px;
+    max-height: 288px;
+    padding: 40px 28px;
+  }
+
+  .card .info {
+    margin-top: 28px;
+  }
+
+  .orange.card {
+    margin-top: 0px;
+    height: 100%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .fgos.card {
+    margin-bottom: 0px;
+    height: 100%;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding: 40px 77.5px 88px 77.5px;
+
+    clip-path: none;
+    background: radial-gradient(
+        circle at 0 100%,
+        rgba(0, 0, 0, 0) 48px,
+        #f4f4f4 10px
+      ),
+      radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0) 48px, #f4f4f4 10px),
+      radial-gradient(circle at 100% 0, rgba(0, 0, 0, 0) 48px, #f4f4f4 10px),
+      radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 48px, #f4f4f4 10px);
     background-position: bottom left, bottom right, top right, top left;
     background-size: 50% 50%;
     background-repeat: no-repeat;
     position: relative;
+  }
+
+  .image.fgos {
+    margin: 16px 0px 16px 0px;
+  }
+
+  .purple.card {
+    margin-top: 0px;
+    height: 100%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .vshe.card {
+    padding-top: 40px;
+    margin-bottom: 0px;
+    height: 100%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .image.vshe {
+    margin: 16px 0px 16px 0px;
+  }
 }
 
-@media screen and (max-width: 1366px){
-    .body-wrapper{
-        max-width: 1233px;
-        max-height: 604px;
-    }
+@media screen and (max-width: 768px) {
+  .body-wrapper {
+    max-width: 620px;
+  }
 
-    .cards {
-        gap: 36px;
-    }
+  .header {
+    margin-bottom: 40px;
+  }
 
-    .card {
-        padding: 52px 28px 52px 28px;
-    }
+  .cards {
+    gap: 20px;
+  }
 
-    .card .info {}
+  .card {
+    padding: 52px 28px 52px 28px;
+    max-width: 300px;
+    max-height: none;
+  }
 
-    .card p{
-        font-size: 20px;
-        line-height: 28px;
-        letter-spacing: -0.15px;
-    }
+  .fgos.card {
+    padding: 52px 37.5px 129px 37.5px;
+    background: none;
+    background-color: #f4f4f4;
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+  }
 
-    .orange.card .info {
-        margin-top: 28px;
-    }
-
-    .image.herb-orange {
-        max-width: 76px;
-        max-height: 76px;
-    }
-
-    .fgos.card {
-        margin-bottom: 32px;
-    }
-
-    .purple.card .info {
-        margin-top: 28px;
-    }
-
-    .image.herb-purple {
-        max-width: 76px;
-        max-height: 76px;
-    }
-
-    .vshe.card {
-        margin-bottom: 32px;
-    }
+  .vshe.card {
+    padding: 52px 37.5px 23px 37.5px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-    .body-wrapper {
-        max-width: 940px;
-        max-height: 776px;
-    }
+@media screen and (max-width: 430px) {
+  .body-wrapper {
+    max-width: 398px;
+  }
 
-    .header {
-        max-width: 780px;   
-    }
+  .header {
+    margin-top: 5px;
+    margin-bottom: 32px;
+  }
 
-    .header p {
-        font-size: 36px;
-        line-height: 44px;
-    }
+  .header p {
+    font-size: 30px;
+    line-height: 37px;
+  }
 
-    .cards {
-        max-width: 780px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 20px; /* Расстояние между карточками */
-        justify-items: center;
-        align-items: center;
-    }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .card {
-        max-width: 380px;
-        max-height: 288px;
-        padding: 40px 28px;
-    }
+  .card {
+    max-width: none;
+    padding: 28px 24px;
+  }
 
-    .card .info {
-        margin-top: 28px;
-    }
+  .card .info {
+    margin-top: 24px;
+  }
 
-    .orange.card {
-        margin-top: 0px;
-        height: 100%;
-        grid-column-start: 1;
-        grid-row-start: 1;
-    }
+  .fgos.card {
+    clip-path: none;
+    padding: 28px 24px;
+  }
 
-    .fgos.card {
-        margin-bottom: 0px;
-        height: 100%;
-        grid-column-start: 1;
-        grid-row-start: 2;
-        padding: 40px 77.5px 88px 77.5px;
-
-        clip-path: none;
-        background:
-        radial-gradient(circle at 0 100%, rgba(0,0,0,0) 48px, #F4F4F4 10px),
-        radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 48px, #F4F4F4 10px),
-        radial-gradient(circle at 100% 0, rgba(0,0,0,0) 48px, #F4F4F4 10px),
-        radial-gradient(circle at 0 0, rgba(0,0,0,0) 48px, #F4F4F4 10px);
-        background-position: bottom left, bottom right, top right, top left;
-        background-size: 50% 50%;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-
-    .image.fgos {
-        margin: 16px 0px 16px 0px;
-    }
-
-    .purple.card {
-        margin-top: 0px;
-        height: 100%;
-        grid-column-start: 2;
-        grid-row-start: 2;
-    }
-
-    .vshe.card {
-        padding-top: 40px;
-        margin-bottom: 0px;
-        height: 100%;
-        grid-column-start: 2;
-        grid-row-start: 1; 
-    }
-
-    .image.vshe {
-        margin: 16px 0px 16px 0px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .body-wrapper {
-        max-width: 620px;
-    }
-
-    .header {
-        margin-bottom: 40px;
-    }
-
-    .cards {
-        gap: 20px;
-    }
-
-    .card {
-        padding: 52px 28px 52px 28px;
-        max-width: 300px;
-        max-height: none;
-    }
-
-    .fgos.card {
-        padding: 52px 37.5px 129px 37.5px;
-        background: none;
-        background-color: #F4F4F4;
-        clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
-    }
-
-    .vshe.card {
-        padding: 52px 37.5px 23px 37.5px;
-    }
-}
-
-@media screen and (max-width: 430px){
-    .body-wrapper {
-        max-width: 398px;
-    }
-
-    .header {
-        margin-top: 5px;
-        margin-bottom: 32px;
-    }
-
-    .header p{
-        font-size: 30px;
-        line-height: 37px;
-    }
-
-    .cards{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card{
-        max-width: none;
-        padding: 28px 24px;
-    }
-
-    .card .info {
-        margin-top: 24px;
-    }
-
-    .fgos.card{
-        clip-path: none;
-        padding: 28px 24px;
-    }
-
-    .vshe.card {
-        background: none;
-        background-color: #F4F4F4;
-        padding: 28px 24px;
-    }
+  .vshe.card {
+    background: none;
+    background-color: #f4f4f4;
+    padding: 28px 24px;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    .body-wrapper {
-        max-width: 343px;
-    }
+  .body-wrapper {
+    max-width: 343px;
+  }
 
-    .header p {
-        font-size: 26px;
-        line-height: 32px;
-    }
+  .header p {
+    font-size: 26px;
+    line-height: 32px;
+  }
 
-    .card .info {
-        margin-top: 20px;
-        gap: 20px;
-    }
+  .card .info {
+    margin-top: 20px;
+    gap: 20px;
+  }
 
-    .orange.card .info {
-        margin-top: 20px;
-    }
+  .orange.card .info {
+    margin-top: 20px;
+  }
 
-    .purple.card .info {
-        margin-top: 20px;
-    }
+  .purple.card .info {
+    margin-top: 20px;
+  }
 
-    .image.fgos {
-        margin: unset;
-    }
+  .image.fgos {
+    margin: unset;
+  }
 
-    .image.vshe {
-        margin: unset;
-    }
+  .image.vshe {
+    margin: unset;
+  }
 }
